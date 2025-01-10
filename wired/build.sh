@@ -26,6 +26,7 @@ GOOS=linux \
 go build  \
 --trimpath \
 -ldflags '-w -s' \
--o build/wired
+-o build/wired \
+-buildvcs=false
 
 upx build/wired
